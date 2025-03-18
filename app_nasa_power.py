@@ -215,7 +215,7 @@ if isinstance(data_range, tuple) and len(data_range) == 2:
             tickvals=list(range(1, 13)),  # Posições dos meses
             ticktext=["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]  # Nomes dos meses
         ),
-        yaxis=dict(title="Precipitação acumulada (mm/dia)"),
+        yaxis=dict(title="Precipitação acumulada (mm/mês)"),
         legend_title="Ano",
         template="plotly_white"
     )
