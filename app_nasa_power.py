@@ -202,7 +202,7 @@ if isinstance(data_range, tuple) and len(data_range) == 2:
     fig = px.line(
         dfp, x="month", y="prec", color="year",
         markers=True, title="Precipitação Mensal por Ano",
-        labels={"month": "Mês", "prec": "Precipitação", "year": "Ano"},
+        labels={"month": "Mês", "prec": "Precipitação acumulada", "year": "Ano"},
         color_discrete_sequence=px.colors.sequential.Blues  # Usando a paleta do Plotly
 
         # Suaviza a linha
@@ -215,7 +215,7 @@ if isinstance(data_range, tuple) and len(data_range) == 2:
             tickvals=list(range(1, 13)),  # Posições dos meses
             ticktext=["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]  # Nomes dos meses
         ),
-        yaxis=dict(title="Precipitação (mm)"),
+        yaxis=dict(title="Precipitação acumulada (mm/dia)"),
         legend_title="Ano",
         template="plotly_white"
     )
