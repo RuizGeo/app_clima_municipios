@@ -190,7 +190,7 @@ if isinstance(data_range, tuple) and len(data_range) == 2:
 
     #@title Plotar o gráfico do comportamento da Precipitação (Ano e Mês)
     # Transformar índices em colunas
-    dfp = df_mean.reset_index()
+    dfp = df_sum.reset_index()
 
 
     # Criar a paleta do Seaborn e converter para hex
@@ -225,7 +225,7 @@ if isinstance(data_range, tuple) and len(data_range) == 2:
 
     #@title Plotar o gráfico do comportamento da Temperatura(Ano e Mês)
     # Transformar índices em colunas
-    dft = df_sum.reset_index()
+    dft = df_mean.reset_index()
 
 
     # Criar a paleta do Seaborn e converter para hex
