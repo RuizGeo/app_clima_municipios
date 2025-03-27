@@ -141,7 +141,7 @@ end_date = datetime.date(2025, 2, 28)
 data_range = st.sidebar.date_input(
     "Selecione o intervalo de datas:",
     value=(start_date, end_date),
-    min_value=start_date,
+    min_value=datetime.date(2000, 1, 1),
     max_value=datetime.date(2025, 12, 31),
 )
 
